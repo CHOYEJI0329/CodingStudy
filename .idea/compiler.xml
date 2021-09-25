@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="basic1" target="8" />
       <module name="BOJ" target="8" />
       <module name="CodingStudy" target="8" />
       <module name="step" target="8" />
