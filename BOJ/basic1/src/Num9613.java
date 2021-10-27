@@ -38,9 +38,7 @@ public class Num9613 {
 
         if(b == 0) return a;
 
-        int gcd = GCD(b, a%b);
-
-        return gcd;
+        return GCD(b, a%b);
     }
 
 }
