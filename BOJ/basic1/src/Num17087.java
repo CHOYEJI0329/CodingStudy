@@ -17,26 +17,13 @@ public class Num17087 {
         StringTokenizer st2 = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i++){
             array[i] = Integer.parseInt(st2.nextToken());
-            if(array[i] < S){
-                array[i] = S - array[i];
-            }else{
-                array[i] = array[i] - S;
-            }
+            array[i] = Math.abs(S - array[i]);
         }
 
-        int answer = 1;
-        if(N == 1){
-            answer = array[0];
+        int answer = array[0];
+        for(int i = 1; i < N; i++){
+            answer = Euclidean(answer, array[i]);
         }
-        for(int i = 0; i < N-1; i++){
-            if(i == 0){
-                answer = Euclidean(array[i], array[i+1]);
-            }else{
-                answer = Euclidean(answer, array[i+1]);
-            }
-        }
-
-
 
         System.out.println(answer);
 
