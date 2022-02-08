@@ -48,7 +48,6 @@ public class Num15663 {
         }
 
         for(int i = 0; i < N; i++){
-            if(i > 0 && index == 0 && c[i-1] == c[i]) continue;
 
             if(b[i]) continue;
             b[i] = true;
